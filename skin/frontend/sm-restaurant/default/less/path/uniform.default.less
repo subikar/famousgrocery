@@ -1,0 +1,35 @@
+.selector{
+  border:1px solid @border-color;
+  position: relative;
+
+  select{
+    opacity: 0;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  span{
+    display: block;
+    position: relative;
+    padding-right:38px;
+    padding-left:10px;
+    height:30px;
+    line-height: 30px;
+
+    &:before{
+      font-family: fontawesome;
+      content:"\f0d7";
+      font-size:14px;
+      width: 37px;
+      line-height: 30px;
+      text-align: center;
+      border-left:1px solid @border-color;
+      position: absolute;
+      right: 0px;
+      top:0px;
+    }
+  }
+}

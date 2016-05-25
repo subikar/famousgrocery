@@ -1,0 +1,54 @@
+.transform_scale(@scale:1){
+  transform:scale(@scale);
+  -moz-transform:scale(@scale);
+  -webkit-transform:scale(@scale);
+  -ms-transform:scale(@scale);
+}
+
+.transition(@transition:.3s){
+  transition:@transition;
+  -moz-transition:@transition;
+  -webkit-transition:@transition;
+}
+
+.transform_origin(@var1:top,@var2:center){
+  transform-origin: @var1 @var2;
+  -moz-transform-origin: @var1 @var2;
+  -webkit-transform-origin: @var1 @var2;
+  -ms-transform-origin: @var1 @var2;
+}
+
+.border_radius(@radius:3px){
+  border-radius:@radius;
+  -moz-border-radius:@radius;
+  -webkit-border-radius:@radius;
+}
+
+.border-arrow-top (@width, @height, @color){
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 @width/2 @height @width/2;
+  border-color: transparent transparent @color transparent;
+}
+.border-arrow-bottom (@width, @height, @color){
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: @height @width/2 0 @width/2;
+  border-color: @color transparent transparent transparent;
+}
+.border-arrow-right (@width, @height, @color){
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: @height/2 0 @height/2 @width;
+  border-color: transparent transparent transparent @color;
+}
+.border-arrow-left (@width, @height, @color){
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: @height/2 @width @height/2 0;
+  border-color: transparent @color transparent transparent;
+}
