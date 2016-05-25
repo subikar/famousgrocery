@@ -1,0 +1,781 @@
+<?xml version="1.0"?>
+<root>
+  <pages>
+    <cms_page>
+      <title>404 Not Found</title>
+      <root_template>one_column</root_template>
+      <identifier>no-route</identifier>
+      <content_heading></content_heading>
+      <content><![CDATA[<div class="wrapper_404page">
+	<div class="col-lg-7 col-md-7">
+		<div class="content-404page">
+			<p class="top-text">Don't worry you will be back on track in no time!</p>
+			<p class="img-404"><img src="{{media url="wysiwyg/404image/404-img-text.png"}}" alt="" /></p>
+			<p class="bottom-text">Page doesn't exist or some other error occured. Go to our home page or go back previous page</p>
+			<div class="button-404">
+				<a href="javascript:void(0);" onclick="goBack()" class="btn-404 prev-page-btn" title="PREVIOUS PAGE">PREVIOUS PAGE</a>
+				<a href="{{store url=""}}" class="btn-404 back2home" title="BACK TO HOMEPAGE">BACK TO HOMEPAGE</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-lg-5 col-md-5">
+		<div class="img-right-404">
+            <img src="{{media url="wysiwyg/404image/404-image.png"}}" alt="" />
+		</div>
+	</div>
+	<div style="clear:both; height:0px">&nbsp;</div>
+	<script>
+	function goBack() {
+		window.history.back()
+	}
+	</script>
+</div>]]></content>
+      <is_active>1</is_active>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_page>
+    <cms_page>
+      <title>Restaurant - Responsive Magento Multipurpose Theme</title>
+      <root_template>one_column</root_template>
+      <identifier>home</identifier>
+      <content_heading></content_heading>
+      <content><![CDATA[<p class="no-display">&nbsp;</p>]]></content>
+      <is_active>1</is_active>
+      <layout_update_xml><![CDATA[<!--GROUP 1-->
+<reference name="group1_col1">
+         <block type="cms/block" name="service_top">
+	        <action method="setBlockId"><block_id>service-home</block_id></action>
+         </block>
+</reference>
+
+<reference name="group1_col2">
+
+</reference>
+
+<reference name="group1_col3">
+
+</reference>
+
+<reference name="group1_col4">
+
+</reference>
+
+<reference name="group1_col5">
+
+</reference>
+
+<reference name="group1_col6">
+
+</reference>
+
+
+
+<!--GROUP 2-->
+<reference name="group2_col1">
+         <block type="imageslider/list" name="imageslider.list.default" template="sm/imageslider/default.phtml"></block>
+</reference>
+
+<reference name="group2_col2">
+         <block type="cms/block" name="right_static-image">
+	        <action method="setBlockId"><block_id>right-static-image</block_id></action>
+         </block>
+</reference>
+
+<reference name="group2_col3">
+
+</reference>
+
+<reference name="group2_col4">
+
+</reference>
+
+<reference name="group2_col5">
+
+</reference>
+
+<reference name="group2_col6">
+
+</reference>
+
+
+<!--GROUP 3-->
+<reference name="group3_col1">
+         <block type="megamenu/list" name="megamenu.list.theme.content" as="megaMenuLeft" template="sm/megamenu/megamenu-left.phtml">
+		<action method="setConfig">
+			<values>
+                                <title>Category</title>  
+			        <group_id>3</group_id>
+				<theme>2</theme>
+			</values>
+		</action>
+	</block>
+</reference>
+
+<reference name="group3_col2">
+         <block type="deal/list" name="deal.list.default" template="sm/deal/deal-slider.phtml"></block>
+</reference>
+
+<reference name="group3_col3">
+
+</reference>
+
+<reference name="group3_col4">
+
+</reference>
+
+<reference name="group3_col5">
+
+</reference>
+
+<reference name="group3_col6">
+
+</reference>
+
+
+<!--GROUP 4-->
+<reference name="group4_col1">
+        <block type="supercategories/list" name="supercategories.list.default.1" template="sm/supercategories/default.phtml"></block>
+</reference>
+
+<reference name="group4_col2">
+          <block type="cms/block" name="static_image_home_center">
+	        <action method="setBlockId"><block_id>static-image-home-center</block_id></action>
+         </block>
+</reference>
+
+<reference name="group4_col3">
+         <block type="cms/block" name="static_image_home_center_2">
+	        <action method="setBlockId"><block_id>static-image-home-center-2</block_id></action>
+         </block>
+</reference>
+
+<reference name="group4_col4">
+         <block type="supercategories/list" name="supercategories.list.default.2" template="sm/supercategories/default.phtml">
+                 <action method="_setConfig">
+			<values>
+				<product_category>61</product_category>
+			</values>
+                 </action>  
+         </block>
+</reference>
+
+<reference name="group4_col5">
+         <block type="cms/block" name="static_image_home_center_3">
+	        <action method="setBlockId"><block_id>static-image-home-center-3</block_id></action>
+         </block>
+</reference>
+
+<reference name="group4_col6">
+
+</reference>
+
+
+
+
+<!--GROUP 5-->
+<reference name="group5_col1">
+         <block type="categories/list" name="categories.list.default" template="sm/categories/default.phtml"></block>
+
+         <block type="cms/block" name="static_image_home_4">
+	        <action method="setBlockId"><block_id>static-image-home-center-4</block_id></action>
+         </block>
+
+         <block type="basicproducts/list" name="basicproducts.list.custom" template="sm/basicproducts/custom-default.phtml">
+                 <action method="_setConfig">
+			<values>
+				<product_limitation>10</product_limitation>
+				<basicproducts_title_text>Weekly BestSelling</basicproducts_title_text>
+				<product_order_dir>ASC</product_order_dir>
+				<product_order_by>best_sales</product_order_by>
+				<product_title_maxlength>50</product_title_maxlength>
+				<nb_column1>5</nb_column1>
+				<nb_column2>4</nb_column2>
+				<nb_column3>2</nb_column3>
+				<nb_column4>1</nb_column4>
+				<product_title_display>1</product_title_display>
+				<product_price_display>1</product_price_display>
+				<product_reviews_count>1</product_reviews_count>
+				<product_addcart_display>1</product_addcart_display>
+				<product_addwishlist_display>1</product_addwishlist_display>
+				<product_addcompare_display>1</product_addcompare_display>
+				<product_readmore_display>0</product_readmore_display>
+				<product_description_display>0</product_description_display>
+			</values>
+                 </action>  
+	 </block>
+
+         <block type="cms/block" name="top_brand">
+	        <action method="setBlockId"><block_id>static-top-brand</block_id></action>
+         </block>
+
+</reference>
+
+<reference name="group5_col2">
+         <block type="cms/block" name="static_image_home_right">
+	        <action method="setBlockId"><block_id>static-image-home-right</block_id></action>
+         </block>
+
+         <block type="newsletter/subscribe" name="left.newsletter" template="newsletter/subscribes-sidebar.phtml"/>
+
+         <block type="facebook/list" name="facebook.list.default" template="sm/facebook/default.phtml"></block>
+
+         <block type="tag/popular" name="tags_popular" template="tag/popular-sidebar.phtml"/>
+
+</reference>
+
+<reference name="group5_col3">
+         <block type="cms/block" name="collection_tab">
+	        <action method="setBlockId"><block_id>collection-tab</block_id></action>
+         </block>
+
+         <block type="cms/block" name="static_image_home_5">
+	        <action method="setBlockId"><block_id>static-image-home-5</block_id></action>
+         </block>
+</reference>
+
+<reference name="group5_col4">
+         <block type="basicproducts/list" name="basicproducts.list.home" template="sm/basicproducts/basic-product-list.phtml">
+                 <action method="_setConfig">
+			<values>
+				<product_limitation>4</product_limitation>
+				<basicproducts_title_text>Top Rating</basicproducts_title_text>
+				<product_order_dir>ASC</product_order_dir>
+				<product_order_by>top_rating</product_order_by>
+				<product_title_maxlength>50</product_title_maxlength>
+				<product_title_display>1</product_title_display>
+				<product_price_display>1</product_price_display>
+				<product_reviews_count>1</product_reviews_count>
+				<product_addcart_display>0</product_addcart_display>
+				<product_addwishlist_display>0</product_addwishlist_display>
+				<product_addcompare_display>0</product_addcompare_display>
+				<product_readmore_display>0</product_readmore_display>
+				<product_description_display>0</product_description_display>
+			</values>
+                 </action>  
+	 </block>
+</reference>
+
+<reference name="group5_col5">
+         <block type="blog/menu_sidebar" name="latest_post">
+                <action method="setTemplate" >
+                    <template>aw_blog/latest_post.phtml</template>
+                </action>
+            </block>
+</reference>
+
+<reference name="group5_col6">
+         <block type="cms/block" name="testimonial">
+	        <action method="setBlockId"><block_id>slider-testimonials</block_id></action>
+         </block>
+</reference>
+
+
+
+
+
+<reference name="group6_col1">
+         <block type="cms/block" name="why_choose_us">
+	        <action method="setBlockId"><block_id>why-choose-us</block_id></action>
+         </block>
+</reference>
+
+<reference name="group6_col2">
+
+</reference>
+
+<reference name="group6_col3">
+
+</reference>
+
+<reference name="group6_col4">
+
+</reference>
+
+<reference name="group6_col5">
+
+</reference>
+
+<reference name="group6_col6">
+
+</reference>
+
+
+
+
+]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_page>
+    <cms_page>
+      <title>About Us</title>
+      <root_template>two_columns_left</root_template>
+      <identifier>about-magento-demo-store</identifier>
+      <content_heading></content_heading>
+      <content><![CDATA[<div class="page-head">
+<h3>OUR STORY</h3>
+</div>
+<div class="col2-set content-seperator">
+<div class="col-1">
+<p>Madison Island is...</p>
+<p style="padding-left: 30px;">...a breath of fresh air.<br />&hellip;a mecca for style savvy travellers. <br />&hellip;a curator of gorgeous sartorial design. <br />&hellip;a world class concept store.</p></div>
+<div class="col-2">
+<p><img src="{{media url="wysiwyg/about_us.jpg"}}" alt="about-usimage" /></p>
+<h2 style="text-align: center;padding-left:30px">Madison Island Boutique in NYC</h2></div><div class="std">
+<p>Uniquely designed with cosmopolitan appeal, Madison Island gives couture-conscious frequent flyers exactly what they want&mdash;unprecedented access to the latest looks of the season, style solutions for easy international jet setting, and convenient worldwide delivery.</p>
+<p style="margin-top: 13px;">With its website relaunch in 2013, Madison Island has solidified its standing as the new essential luxury. Its pages are filled with exquisite finds for fashion and home.</p>
+</div>
+</div>
+]]></content>
+      <is_active>1</is_active>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_page>
+    <cms_page>
+      <title>Restaurant V2 - Responsive Magento Multipurpose Theme</title>
+      <root_template>one_column</root_template>
+      <identifier>home-v2</identifier>
+      <content_heading></content_heading>
+      <content><![CDATA[<p class="no-display">&nbsp;</p>]]></content>
+      <is_active>1</is_active>
+      <layout_update_xml><![CDATA[<!--GROUP 1-->
+<reference name="group1_col1">
+         <block type="imageslider/list" name="imageslider.list.default" template="sm/imageslider/default.phtml"></block>
+</reference>
+
+<reference name="group1_col2">
+
+</reference>
+
+<reference name="group1_col3">
+
+</reference>
+
+<reference name="group1_col4">
+
+</reference>
+
+<reference name="group1_col5">
+
+</reference>
+
+<reference name="group1_col6">
+
+</reference>
+
+
+
+<!--GROUP 2-->
+<reference name="group2_col1">
+         <block type="cms/block" name="service-top">
+	        <action method="setBlockId"><block_id>service-top-index2</block_id></action>
+         </block>
+</reference>
+
+<reference name="group2_col2">
+
+</reference>
+
+<reference name="group2_col3">
+
+</reference>
+
+<reference name="group2_col4">
+
+</reference>
+
+<reference name="group2_col5">
+
+</reference>
+
+<reference name="group2_col6">
+
+</reference>
+
+
+<!--GROUP 3-->
+<reference name="group3_col1">
+         <block type="megamenu/list" name="megamenu.list.theme.content" as="megaMenuLeft" template="sm/megamenu/megamenu-left.phtml">
+		<action method="setConfig">
+			<values>
+                                <title>Category</title>  
+			        <group_id>3</group_id>
+				<theme>2</theme>
+			</values>
+		</action>
+	</block>
+</reference>
+
+<reference name="group3_col2">
+         <block type="deal/list" name="deal.list.default" template="sm/deal/deal-slider.phtml"></block>
+</reference>
+
+<reference name="group3_col3">
+
+</reference>
+
+<reference name="group3_col4">
+
+</reference>
+
+<reference name="group3_col5">
+
+</reference>
+
+<reference name="group3_col6">
+
+</reference>
+
+
+<!--GROUP 4-->
+<reference name="group4_col1">
+        <block type="listingtabs/list" name="listingtabs_list_default_1" template="sm/listingtabs/default.phtml"></block>
+</reference>
+
+<reference name="group4_col2">
+    <block type="cms/block" name="four_static_image_index2">
+	    <action method="setBlockId"><block_id>four-static-image-index2</block_id></action>
+    </block>
+</reference>
+
+<reference name="group4_col3">
+         
+</reference>
+
+<reference name="group4_col4">
+         
+</reference>
+
+<reference name="group4_col5">
+ 
+</reference>
+
+<reference name="group4_col6">
+
+</reference>
+
+
+
+
+<!--GROUP 5-->
+<reference name="group5_col1">
+	<block type="listingtabs/list" name="listingtabs_list_default_2" template="sm/listingtabs/default.phtml">
+        <action method="_setConfig">
+			<values>
+				<listingtabs_title_text>Best Sellers</listingtabs_title_text>
+				<product_order_by>best_sales</product_order_by>
+			</values>
+        </action>  
+    </block>
+</reference>
+
+<reference name="group5_col2">
+	<block type="cms/block" name="static_image_home_center_3">
+	    <action method="setBlockId"><block_id>static-image-home-center-3</block_id></action>
+    </block>
+</reference>
+
+<reference name="group5_col3">
+
+</reference>
+
+<reference name="group5_col4">
+ 
+</reference>
+
+<reference name="group5_col5">
+  
+</reference>
+
+<reference name="group5_col6">
+  
+</reference>
+
+
+
+
+
+<reference name="group6_col1">
+
+	<block type="newsletter/subscribe" name="left.newsletter" template="newsletter/subscribes-sidebar.phtml"/>
+	<block type="facebook/list" name="facebook.list.default" template="sm/facebook/default.phtml"></block>
+    <block type="tag/popular" name="tags_popular" template="tag/popular-sidebar.phtml"/>
+	
+</reference>
+
+<reference name="group6_col2">
+	<block type="basicproducts/list" name="basicproducts.list.custom" template="sm/basicproducts/custom-default.phtml">
+				<action method="_setConfig">
+					<values>
+						<product_limitation>10</product_limitation>
+						<basicproducts_title_text>Weekly BestSelling</basicproducts_title_text>
+						<product_order_dir>ASC</product_order_dir>
+						<product_order_by>best_sales</product_order_by>
+						<product_title_maxlength>50</product_title_maxlength>
+						<nb_column1>5</nb_column1>
+						<nb_column2>4</nb_column2>
+						<nb_column3>2</nb_column3>
+						<nb_column4>1</nb_column4>
+						<product_title_display>1</product_title_display>
+						<product_price_display>1</product_price_display>
+						<product_reviews_count>1</product_reviews_count>
+						<product_addcart_display>1</product_addcart_display>
+						<product_addwishlist_display>1</product_addwishlist_display>
+						<product_addcompare_display>1</product_addcompare_display>
+						<product_readmore_display>0</product_readmore_display>
+						<product_description_display>0</product_description_display>
+					</values>
+                </action>  
+	</block>
+
+	<block type="blog/menu_sidebar" name="latest_post_index2">
+        <action method="setTemplate" >
+            <template>aw_blog/latest_post_index2.phtml</template>
+        </action>
+    </block>	
+</reference>
+
+<reference name="group6_col3">
+	<block type="cms/block" name="brand-slider">
+	    <action method="setBlockId"><block_id>brand-slider</block_id></action>
+    </block>
+</reference>
+
+<reference name="group6_col4">
+
+</reference>
+
+<reference name="group6_col5">
+
+</reference>
+
+<reference name="group6_col6">
+
+</reference>
+
+
+
+
+]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_page>
+    <cms_page>
+      <title>Restaurant V3 - Responsive Magento Multipurpose Theme</title>
+      <root_template>one_column</root_template>
+      <identifier>home-v3</identifier>
+      <content_heading></content_heading>
+      <content><![CDATA[<p class="no-display">&nbsp;</p>]]></content>
+      <is_active>1</is_active>
+      <layout_update_xml><![CDATA[<!--GROUP 1-->
+<reference name="group1_col1">
+	<block type="megamenu/list" name="megamenu.list.theme.content" as="megaMenuLeft" template="sm/megamenu/megamenu-left-style2.phtml">
+		<action method="setConfig">
+			<values>
+                <title>Category</title>  
+			    <group_id>3</group_id>
+				<theme>2</theme>
+			</values>
+		</action>
+	</block>
+</reference>
+
+<reference name="group1_col2">
+	<block type="imageslider/list" name="imageslider.list.default" template="sm/imageslider/default.phtml"></block>
+</reference>
+
+<reference name="group1_col3">
+	<block type="deal/list" name="deal.list.default" template="sm/deal/deal-slider.phtml"></block>
+</reference>
+
+<reference name="group1_col4">
+
+</reference>
+
+<reference name="group1_col5">
+
+</reference>
+
+<reference name="group1_col6">
+
+</reference>
+
+
+
+<!--GROUP 2-->
+<reference name="group2_col1">
+    <block type="cms/block" name="center_static_image">
+	    <action method="setBlockId"><block_id>center-image-index3</block_id></action>
+    </block>
+</reference>
+
+<reference name="group2_col2">
+         
+</reference>
+
+<reference name="group2_col3">
+
+</reference>
+
+<reference name="group2_col4">
+
+</reference>
+
+<reference name="group2_col5">
+
+</reference>
+
+<reference name="group2_col6">
+
+</reference>
+
+
+<!--GROUP 3-->
+<reference name="group3_col1">
+    <block type="supercategories/list" name="supercategories.list.default.1" template="sm/supercategories/default_home3.phtml"></block>    
+</reference>
+
+<reference name="group3_col2">
+    <block type="cms/block" name="static_image_home_center_3">
+	    <action method="setBlockId"><block_id>static-image-home-center-3</block_id></action>
+    </block>  
+</reference>
+
+<reference name="group3_col3">
+	<block type="basicproducts/list" name="basicproducts.list" template="sm/basicproducts/default-home3.phtml">
+        <action method="_setConfig">
+			<values>
+				<product_limitation>10</product_limitation>
+				<basicproducts_title_text>Weekly BestSelling</basicproducts_title_text>
+				<product_order_dir>ASC</product_order_dir>
+				<product_order_by>best_sales</product_order_by>
+				<product_title_maxlength>50</product_title_maxlength>
+				<nb_column1>5</nb_column1>
+				<nb_column2>4</nb_column2>
+				<nb_column3>2</nb_column3>
+				<nb_column4>1</nb_column4>
+				<product_title_display>1</product_title_display>
+				<product_price_display>1</product_price_display>
+				<product_reviews_count>1</product_reviews_count>
+				<product_addcart_display>1</product_addcart_display>
+				<product_addwishlist_display>1</product_addwishlist_display>
+				<product_addcompare_display>1</product_addcompare_display>
+				<product_readmore_display>0</product_readmore_display>
+				<product_description_display>0</product_description_display>
+			</values>
+        </action>  
+	</block>
+</reference>
+
+<reference name="group3_col4">
+
+</reference>
+
+<reference name="group3_col5">
+
+</reference>
+
+<reference name="group3_col6">
+
+</reference>
+
+
+<!--GROUP 4-->
+<reference name="group4_col1">
+    <block type="blog/menu_sidebar" name="latest_post">
+        <action method="setTemplate" >
+            <template>aw_blog/latest_post_index3.phtml</template>
+        </action>
+    </block>
+</reference>
+
+<reference name="group4_col2">
+	<block type="cms/block" name="testimonial">
+	    <action method="setBlockId"><block_id>slider-testimonials-home3</block_id></action>
+    </block>
+</reference>
+
+<reference name="group4_col3">
+	<block type="cms/block" name="collection_tab">
+	    <action method="setBlockId"><block_id>collection-tab</block_id></action>
+    </block>
+</reference>
+
+<reference name="group4_col4">
+    
+</reference>
+
+<reference name="group4_col5">
+         
+</reference>
+
+<reference name="group4_col6">
+
+</reference>
+
+
+
+
+<!--GROUP 5-->
+<reference name="group5_col1">
+	<block type="cms/block" name="why_choose_us">
+	    <action method="setBlockId"><block_id>why-choose-us</block_id></action>
+    </block>
+</reference>
+
+<reference name="group5_col2">
+
+</reference>
+
+<reference name="group5_col3">
+
+</reference>
+
+<reference name="group5_col4">
+
+</reference>
+
+<reference name="group5_col5">
+        
+</reference>
+
+<reference name="group5_col6">
+         
+</reference>
+
+
+
+
+
+<reference name="group6_col1">
+	<block type="cms/block" name="brand-slider">
+	    <action method="setBlockId"><block_id>brand-slider</block_id></action>
+    </block>
+</reference>
+
+<reference name="group6_col2">
+
+</reference>
+
+<reference name="group6_col3">
+
+</reference>
+
+<reference name="group6_col4">
+
+</reference>
+
+<reference name="group6_col5">
+
+</reference>
+
+<reference name="group6_col6">
+
+</reference>
+
+
+
+
+]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_page>
+  </pages>
+</root>

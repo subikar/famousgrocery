@@ -1,0 +1,52 @@
+<?php 
+	$config = Mage::helper('restaurant/config');
+?>
+<div class="socials-wrap">
+	<ul>
+		<?php if( $config->getSocialSetting('show_facebook') == 1 ){ ?>
+			<li class="li-social facebook-social">
+				<a title="<?php echo $config->getSocialSetting('facebook_name')?>" href="<?php echo $config->getSocialSetting('facebook_url')?>" target="_blank">
+					<span class="fa fa-facebook icon-social"></span>
+					<span class="name-social"><?php echo $config->getSocialSetting('facebook_name')?></span>
+				</a>
+			</li>
+		<?php } ?>
+		
+		<?php if( $config->getSocialSetting('show_twitter') == 1 ){ ?>
+			<li class="li-social twitter-social">
+				<a title="<?php echo $config->getSocialSetting('twitter_name')?>" href="<?php echo $config->getSocialSetting('twitter_url')?>" target="_blank">
+					<span class="fa fa-twitter icon-social"></span>
+					<span class="name-social"><?php echo $config->getSocialSetting('twitter_name')?></span>
+				</a>
+			</li>
+		<?php } ?>
+		
+		<?php if( $config->getSocialSetting('show_google') == 1 ){ ?>
+			<li class="li-social google-social">
+				<a title="<?php echo $config->getSocialSetting('google_name')?>" href="<?php echo $config->getSocialSetting('google_url')?>" target="_blank">
+					<span class="fa fa-google-plus icon-social"></span>
+					<span class="name-social"><?php echo $config->getSocialSetting('google_name')?></span>
+				</a>
+			</li>
+		<?php } ?>
+		
+		<?php if( $config->getSocialSetting('show_rss') == 1 ){ ?>
+			<li class="li-social rss-social">
+				<a title="<?php echo $config->getSocialSetting('rss_name')?>" href="<?php echo $config->getSocialSetting('rss_url')?>" target="_blank">
+					<span class="fa fa-rss icon-social"></span>
+					<span class="name-social"><?php echo $config->getSocialSetting('rss_name')?></span>
+				</a>
+			</li>
+		<?php } ?>
+		
+		<?php if( $config->getSocialSetting('show_vimeo') == 1 ){ ?>
+			<li class="li-social vimeo-social">
+				<a title="<?php echo $config->getSocialSetting('vimeo_name')?>" href="<?php echo $config->getSocialSetting('vimeo_url')?>" target="_blank">
+					<span class="fa fa-vimeo icon-social"></span>
+					<span class="name-social"><?php echo $config->getSocialSetting('vimeo_name')?></span>
+				</a>
+			</li>
+		<?php } ?>
+	</ul>
+</div>    
+			

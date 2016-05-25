@@ -1,0 +1,152 @@
+<div class="header-container header-style-4">
+    <div class="header">
+        <div class="header-inner">
+            <?php   if($this->getIsHomePage())  : ?>
+            <div class="header-maps" style="height: 0px">
+
+             <?php   echo $this->getLayout()->createBlock('cms/block')->setBlockId('contact-googlemap')->toHtml()  ; ?>
+
+            </div>
+        <?php endif ;?>
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">
+                            <?php   if($this->getIsHomePage())  : ?>
+                            <div class="maps-btn">
+                                <div class="tongle">
+
+                                </div>
+                            </div>
+                             <?php endif ;?>
+                        </div>
+
+                        <div class="col-lg-7 col-md-7 col-sm-7 customer-wrapper">
+                            <div class="header-link-right">
+                                <div class="block-account-cusomer">
+                                    <div class="toplink-cus my-account">
+                                        <?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('dropdown-my-account')->toHtml(); ?>
+                                    </div>
+                                </div>
+                                <div class="block-account-cusomer link-base">
+                                    <?php echo $this->getChildHtml('topLinks') ?>
+                                </div>
+
+                                <?php echo $this->getChildHtml('currency') ?>
+                                <?php echo $this->getChildHtml('store_language') ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php echo $this->getChildHtml('customer_form_mini_login'); ?>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row custom">
+                        <div class="col-lg-2 col-md-3 logo-wrapper">
+                            <h1 class="logo">
+                                <strong><?php echo $this->getLogoAlt() ?></strong>
+                                <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo">
+                                    <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" />
+                                </a>
+                            </h1>
+                        </div>
+                        <div class="col-lg-10 col-md-9 header-bottom-right">
+                            <div class="minicart-header">
+                                <?php echo $this->getChildHtml('mini-cartpro'); ?>
+                            </div>
+                            <div class="block-search">
+                                <?php echo $this->getChildHtml('topSearch'); ?>
+                            </div>
+                            <div class="yt-menu">
+                                <div class="menu-under">
+                                    <div class="menu-larger">
+                                        <div class="container custom">
+                                            <div class="row custom">
+                                                <?php if( $var_yttheme->getParam('menustyle')=='mega' ){ ?>
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <?php echo $this->getChildHtml('megaMenu'); ?>
+                                                    </div>
+                                                <?php } else { ?>
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <?php echo $this->getChildHtml('topMenu'); ?>
+                                                    </div>
+                                                <?php } ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-menu">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <?php echo $this->getChildHtml('catalog.topmobinav'); ?>
+                                                    <div class="block-right-mobile">
+                                                        <div class="block-mobile block-customer">
+                                                            <a class="fa fa-user icon-mobile icon-customer"></a>
+                                                            <div class="dropdown-mobile dropdown-custommer-mobile">
+                                                                <ul>
+                                                                    <?php if(!$this->helper('customer')->isLoggedIn()){?>
+                                                                        <li>
+                                                                            <a class="login-link-mobile" href="<?php echo $this->getUrl('customer/account/login')?>" title="<?php echo $this->__('Login');?>"><?php echo $this->__('Login');?></a>
+                                                                        </li>
+                                                                    <?php } else{?>
+                                                                        <li>
+                                                                            <a class="logout-link-mobile" href="<?php echo $this->getUrl('customer/account/logout')?>" title="<?php echo $this->__('Logout');?>"><?php echo $this->__('Logout');?></a>
+                                                                        </li>
+                                                                    <?php } ?>
+                                                                </ul>
+                                                                <?php echo $this->getChildHtml('topLinks') ?>
+                                                                <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('dropdown-my-account')->toHtml(); ?>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php echo $this->getChildHtml('topContainer'); ?>
+
+<!--        --><?php //if(strpos(Mage::getSingleton('cms/page')->getIdentifier(), 'home') !== false   && Mage::app()->getFrontController()->getRequest()->getRouteName() == 'cms'): ?>
+<!---->
+<!--            <div class="yt-slideshow">-->
+<!--                <div class="container custom">-->
+<!--                    <div class="row custom">-->
+<!--                        <div class="slideshow col-lg-8" style="max-width:770px" >-->
+<!--                            --><?php //echo $this->getChildHtml('camera-slide'); ?>
+<!--                        </div>-->
+<!--                        <div class="banner-homepage-3 col-lg-4">-->
+<!--                            --><?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('banner-homepage3')->toHtml(); ?>
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!--        --><?php //endif; ?>
+    </div>
+</div>
+<script>
+    jQuery(document).ready(function($){
+        $('.maps-btn .tongle').click(function(){
+            if(!$(this).parents().find('.header-maps').hasClass('active')) {
+                $(this).parents().find('.header-maps').addClass('active').animate({
+                    'height':'393px'
+                }, 300);
+                $(this).addClass('active');
+            }
+            else {
+                $(this).parents().find('.header-maps').removeClass('active').animate({
+                    'height':'0px'
+                }, 300);
+                $(this).removeClass('active');
+            }
+        });
+    });
+</script>

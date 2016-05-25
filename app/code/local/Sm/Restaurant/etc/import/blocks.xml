@@ -1,0 +1,1749 @@
+<?xml version="1.0"?>
+<root>
+  <blocks>
+    <cms_block>
+      <title>Theme - Footer About</title>
+      <identifier>footer-about</identifier>
+      <content><![CDATA[<div class="footer-block-title">
+									<h2>About Us</h2>
+								</div>
+								
+								<div class="footer-block-content">
+									<ul>
+										<li><a href="#" title="Subscribe">Subscribe</a></li>
+										<li><a href="#" title="Unsubscribe">Unsubscribe</a></li>
+										<li><a href="#" title="Help">Help</a></li>
+										<li><a href="#" title="How to Uninstall">How to Uninstall</a></li>
+										<li><a href="{{store url="about-us.html"}}" title="About Company">About Company</a></li>
+										<li><a href="{{store url="contact-us.html"}}" title="Contact Us">Contact Us</a></li>
+									</ul>
+								</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Footer Help</title>
+      <identifier>footer-help</identifier>
+      <content><![CDATA[<div class="footer-block-title">
+									<h2>Help</h2>
+								</div>
+								
+								<div class="footer-block-content">
+									<ul>
+										<li><a href="#" title="Tortor massa">Tortor massa</a></li>
+										<li><a href="#" title="Proident et facilisi">Proident et facilisi</a></li>
+										<li><a href="#" title="Per esse">Per esse</a></li>
+										<li><a href="#" title="Magnis integer">Magnis integer</a></li>
+										<li><a href="#" title="Aptent lacinia">Aptent lacinia</a></li>
+										<li><a href="#" title="Suscipit">Suscipit</a></li>
+									</ul>
+								</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Footer Services</title>
+      <identifier>footer-services</identifier>
+      <content><![CDATA[<div class="footer-block-title">
+									<h2>Our services</h2>
+								</div>
+								
+								<div class="footer-block-content">
+									<ul>
+										<li><a href="#" title="Curo concerns">Curo concerns</a></li>
+										<li><a href="#" title="Hare thery">Hare thery</a></li>
+										<li><a href="#" title="Phease incocal">Phease incocal</a></li>
+										<li><a href="#" title="Scelerisque">Scelerisque</a></li>
+										<li><a href="#" title="Aptent lacinia">Aptent lacinia</a></li>
+										<li><a href="#" title="Natoque">Natoque</a></li>
+									</ul>
+								</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Footer Contact Us</title>
+      <identifier>footer-contact-us</identifier>
+      <content><![CDATA[<div class="footer-block-title">
+									<h2>Contact us</h2>
+								</div>
+								
+								<div class="footer-block-content">
+									<ul>
+										<li><span class="label-footer">Add:</span> Lafayette has a great customer service</li>
+										<li><span class="label-footer">Tel:</span>  <a href="tel:+842800011800" title="Telephone">02 8000 11 800</a></li>
+										<li><span class="label-footer">Email:</span> <a href="mailto:name@email.com" title="Mail to: hr@restaurantshop.com">hr@restaurantshop.com</a></li>
+										<li><span class="label-footer">Hotline:</span> <a href="tel:+846475071376" title="Hotline">647-507-1376</a></li>
+									</ul>
+								</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Footer Payment</title>
+      <identifier>footer-payment</identifier>
+      <content><![CDATA[
+								<ul>
+									<li><a href="#" title="Payment Method"><img src="{{media url="wysiwyg/payment/payment-1.png"}}" alt="Payment" /></a></li>
+									<li><a href="#" title="Payment Method"><img src="{{media url="wysiwyg/payment/payment-2.png"}}" alt="Payment" /></a></li>
+									<li><a href="#" title="Payment Method"><img src="{{media url="wysiwyg/payment/payment-3.png"}}" alt="Payment" /></a></li>
+									<li><a href="#" title="Payment Method"><img src="{{media url="wysiwyg/payment/payment-4.png"}}" alt="Payment" /></a></li>
+								</ul>
+]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Header Dropdown My Account</title>
+      <identifier>dropdown-my-account</identifier>
+      <content><![CDATA[										<a title="My Account" href="{{store url="customer/account"}}">My account</a>
+										<ul class="dropdown-list">
+											<li><a title="My Orders" href="{{store url="sales/order/history"}}">My Orders</a></li>
+											<li><a title="Account Information" href="{{store url="customer/account/edit"}}">Account Information</a></li>
+											<li><a title="Address Book" href="{{store url="customer/address"}}">Address Book</a></li>
+											<li><a title="My Tags" href="{{store url="tag/customer"}}">My Tags</a></li>
+											<li><a title="Billing Agreements" href="{{store url="sales/billing_agreement"}}">Billing Agreements</a></li>
+											<li><a title="Recurring Profiles" href="{{store url="sales/recurring_profile"}}">Recurring Profiles</a></li>
+										</ul>
+									]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Service Home Page</title>
+      <identifier>service-home</identifier>
+      <content><![CDATA[<div class="service-block">
+	<ul class="list-service">
+		<li><a href="#" title="Free Shipping"><span class="fa fa-paper-plane-o">&nbsp;</span>Free Shipping</a></li>
+		<li><a href="#" title="30 Days Money Back Guarantee"><span class="fa fa-retweet">&nbsp;</span>30 Days Money Back Guarantee</a></li>
+		<li><a href="#" title="Free Gift Code Every Wednesdays"><span class="fa fa-gift">&nbsp;</span>Free Gift Code Every Wednesdays</a></li>
+		<li><a href="#" title="Daily Lightning Deals"><span class="fa fa-clock-o">&nbsp;</span>Daily Lightning Deals</a></li>
+	</ul>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Right Static Image</title>
+      <identifier>right-static-image</identifier>
+      <content><![CDATA[<div class="static-image-right two-image">
+	<ul class="list-image">
+		<li><a href="#" title="Static Image"><img src="{{media url="wysiwyg/home-page-image/static-image-home-1.jpg"}}" alt="Static Image" /></a></li>
+		<li><a href="#" title="Static Image"><img src="{{media url="wysiwyg/home-page-image/static-image-home-2.jpg"}}" alt="Static Image" /></a></li>
+	</ul>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Static Image Home Center 1</title>
+      <identifier>static-image-home-center</identifier>
+      <content><![CDATA[<div class="static-image-center">
+<a title="Static Image" href="#"><img src="{{media url="wysiwyg/home-page-image/static-image-center.jpg"}}" alt="Static Image" /></a>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Static Image Home Center 2</title>
+      <identifier>static-image-home-center-2</identifier>
+      <content><![CDATA[<div class="static-image-center">
+<a title="Static Image" href="#"><img src="{{media url="wysiwyg/home-page-image/static-image-center-2.jpg"}}" alt="Static Image" /></a>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Static Image Home Center 3</title>
+      <identifier>static-image-home-center-3</identifier>
+      <content><![CDATA[<div class="static-image-center">
+<a title="Static Image" href="#"><img src="{{media url="wysiwyg/home-page-image/static-image-center-3.jpg"}}" alt="Static Image" /></a>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Static Image Home Right</title>
+      <identifier>static-image-home-right</identifier>
+      <content><![CDATA[<div class="static-image-sidebar">
+<a title="Static Image" href="#"><img src="{{media url="wysiwyg/home-page-image/static-right-home-image.jpg"}}" alt="Static Image" /></a>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Static Image Home Center 4</title>
+      <identifier>static-image-home-center-4</identifier>
+      <content><![CDATA[<div class="static-image-center">
+<a title="Static Image" href="#"><img src="{{media url="wysiwyg/home-page-image/static-image-home-4.jpg"}}" alt="Static Image" /></a>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Static Top Brand</title>
+      <identifier>static-top-brand</identifier>
+      <content><![CDATA[<div class="top-brand">
+	<div class="title-home">
+		<h2>Top Brands</h2>
+	</div>
+	
+	<div class="top-brand-slider">
+		<div class="item">
+			<div class="child-item">
+				<div><a href="#" title="Brand"><img src="{{media url="wysiwyg/brand/brand-1.jpg"}}" alt="Brand" /></a></div>
+				<div><a href="#" title="Brand"><img src="{{media url="wysiwyg/brand/brand-2.jpg"}}" alt="Brand" /></a></div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="child-item">
+				<div><a href="#" title="Brand"><img src="{{media url="wysiwyg/brand/brand-3.jpg"}}" alt="Brand" /></a></div>
+				<div><a href="#" title="Brand"><img src="{{media url="wysiwyg/brand/brand-4.jpg"}}" alt="Brand" /></a></div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="child-item">
+				<div><a href="#" title="Brand"><img src="{{media url="wysiwyg/brand/brand-5.jpg"}}" alt="Brand" /></a></div>
+				<div><a href="#" title="Brand"><img src="{{media url="wysiwyg/brand/brand-6.jpg"}}" alt="Brand" /></a></div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="child-item">
+				<div><a href="#" title="Brand"><img src="{{media url="wysiwyg/brand/brand-7.jpg"}}" alt="Brand" /></a></div>
+				<div><a href="#" title="Brand"><img src="{{media url="wysiwyg/brand/brand-8.jpg"}}" alt="Brand" /></a></div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="child-item">
+				<div><a href="#" title="Brand"><img src="{{media url="wysiwyg/brand/brand-9.jpg"}}" alt="Brand" /></a></div>
+				<div><a href="#" title="Brand"><img src="{{media url="wysiwyg/brand/brand-10.jpg"}}" alt="Brand" /></a></div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="child-item">
+				<div><a href="#" title="Brand"><img src="{{media url="wysiwyg/brand/brand-1.jpg"}}" alt="Brand" /></a></div>
+				<div><a href="#" title="Brand"><img src="{{media url="wysiwyg/brand/brand-2.jpg"}}" alt="Brand" /></a></div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="child-item">
+				<div><a href="#" title="Brand"><img src="{{media url="wysiwyg/brand/brand-3.jpg"}}" alt="Brand" /></a></div>
+				<div><a href="#" title="Brand"><img src="{{media url="wysiwyg/brand/brand-4.jpg"}}" alt="Brand" /></a></div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="child-item">
+				<div><a href="#" title="Brand"><img src="{{media url="wysiwyg/brand/brand-5.jpg"}}" alt="Brand" /></a></div>
+				<div><a href="#" title="Brand"><img src="{{media url="wysiwyg/brand/brand-6.jpg"}}" alt="Brand" /></a></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	jQuery(document).ready(function($) {
+		var owl_topbrand = $(".top-brand-slider");
+		owl_topbrand.owlCarousel({
+
+			responsive:{
+				0:{
+					items:2
+				},
+				480:{
+					items:3
+				},
+				768:{
+					items:3
+				},
+				992:{
+					items:4
+				},
+				1200:{
+					items:5
+				}
+			},
+				
+			autoplay:false,
+			loop:false,
+			nav : true, // Show next and prev buttons
+			dots: false,
+			autoplaySpeed : 500,
+			navSpeed : 500,
+			dotsSpeed : 500,
+			autoplayHoverPause: true,
+			margin:0,
+				
+		});
+	});
+
+</script>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Static Image Home Center 5</title>
+      <identifier>static-image-home-5</identifier>
+      <content><![CDATA[<div class="static-home-5">
+<a href="#" title="Static Image"><img src="{{media url="wysiwyg/home-page-image/static-image-center-5.jpg"}}" alt="Static Image" /></a>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Testimonials</title>
+      <identifier>slider-testimonials</identifier>
+      <content><![CDATA[<div class="overflow-slider testimonials">
+	<div class="title-home">
+		<h2>Testimonials</h2>
+	</div>
+	
+	<div class="margin-slider">
+		<ul class="testimonials-slider">
+			<li class="item">
+				<div class="client-child client-left">
+					<div class="comment">
+						Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam! Scelerisque nascetur nascetur aliquet platea. 
+					</div>
+					
+					<div class="client client-left">
+						<div class="image-client">
+							<img src="{{media url="wysiwyg/testimonial/client-1.png"}}" alt="Venus" />
+						</div>
+						<div class="info-client">
+							<h2 class="client-name">Venus</h2>
+							<div class="client-job">Market Research</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="client-child client-right">
+					<div class="comment">
+						Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam! Scelerisque nascetur nascetur aliquet platea. 
+					</div>
+					
+					<div class="client client-right">
+						<div class="image-client">
+							<img src="{{media url="wysiwyg/testimonial/client-2.png"}}" alt="Venus" />
+						</div>
+						<div class="info-client">
+							<h2 class="client-name">Venus</h2>
+							<div class="client-job">Market Research</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+			<li class="item">
+				<div class="client-child client-left">
+					<div class="comment">
+						Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam! Scelerisque nascetur nascetur aliquet platea. 
+					</div>
+					
+					<div class="client client-left">
+						<div class="image-client">
+							<img src="{{media url="wysiwyg/testimonial/client-1.png"}}" alt="Venus" />
+						</div>
+						<div class="info-client">
+							<h2 class="client-name">Venus</h2>
+							<div class="client-job">Market Research</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="client-child client-right">
+					<div class="comment">
+						Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam! Scelerisque nascetur nascetur aliquet platea. 
+					</div>
+					
+					<div class="client client-right">
+						<div class="image-client">
+							<img src="{{media url="wysiwyg/testimonial/client-2.png"}}" alt="Venus" />
+						</div>
+						<div class="info-client">
+							<h2 class="client-name">Venus</h2>
+							<div class="client-job">Market Research</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+			<li class="item">
+				<div class="client-child client-left">
+					<div class="comment">
+						Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam! Scelerisque nascetur nascetur aliquet platea. 
+					</div>
+					
+					<div class="client client-left">
+						<div class="image-client">
+							<img src="{{media url="wysiwyg/testimonial/client-1.png"}}" alt="Venus" />
+						</div>
+						<div class="info-client">
+							<h2 class="client-name">Venus</h2>
+							<div class="client-job">Market Research</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="client-child client-right">
+					<div class="comment">
+						Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam! Scelerisque nascetur nascetur aliquet platea. 
+					</div>
+					
+					<div class="client client-right">
+						<div class="image-client">
+							<img src="{{media url="wysiwyg/testimonial/client-2.png"}}" alt="Venus" />
+						</div>
+						<div class="info-client">
+							<h2 class="client-name">Venus</h2>
+							<div class="client-job">Market Research</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<script>
+		jQuery(document).ready(function($) {
+			var owl_testimonial = $(".testimonials-slider");
+			owl_testimonial.owlCarousel({
+				responsive:{
+					0:{
+						items:1
+					},
+					480:{
+						items:1
+					},
+					768:{
+						items:1
+					},
+					992:{
+						items:1
+					},
+					1200:{
+						items:1
+					}
+				},
+				
+				autoplay:false,
+				loop:false,
+				nav : true, // Show next and prev buttons
+				dots: false,
+				autoplaySpeed : 500,
+				navSpeed : 500,
+				dotsSpeed : 500,
+				autoplayHoverPause: true,
+				margin:30,
+			});
+		});
+
+	</script>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Why Choose Us</title>
+      <identifier>why-choose-us</identifier>
+      <content><![CDATA[<div class="why-choose">
+	<div class="title-why">
+		<h2>Why Choose Us?</h2>
+	</div>
+	<div class="row">
+		<div class="col-lg-4 col-md-4">
+			<div class="block-whychoose">
+				<div class="why-choose-content">
+					<div class="image-why-choose">
+						<img src="{{media url="wysiwyg/why-choose-us/choose-1.png"}}" alt="Choose" />
+					</div>
+					
+					<div class="info-why-choose">
+						<h2>The Best Merchandise</h2>
+						<div class="des-why-choose">Hac habitant eius lacinia harum, repellat aperiam ex hac consequatur lectus per, metus ullam</div>
+					</div>
+				</div>
+				
+				<div class="why-choose-content">
+					<div class="image-why-choose">
+						<img src="{{media url="wysiwyg/why-choose-us/choose-2.png"}}" alt="Choose" />
+					</div>
+					
+					<div class="info-why-choose">
+						<h2>Easy to Order</h2>
+						<div class="des-why-choose">Hac habitant eius lacinia harum, repellat aperiam ex hac consequatur lectus per, metus ullam facilis suscipit curae eaque gravida hac</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-lg-4 col-md-4">
+			<div class="block-whychoose">
+				<div class="why-choose-content">
+					<div class="image-why-choose">
+						<img src="{{media url="wysiwyg/why-choose-us/choose-3.png"}}" alt="Choose" />
+					</div>
+					
+					<div class="info-why-choose">
+						<h2>Free shipping - No Minimum Order</h2>
+						<div class="des-why-choose">Hac habitant eius lacinia harum, repellat aperiam ex hac consequatur lectus per, metus ullam</div>
+					</div>
+				</div>
+				
+				<div class="why-choose-content">
+					<div class="image-why-choose">
+						<img src="{{media url="wysiwyg/why-choose-us/choose-4.png"}}" alt="Choose" />
+					</div>
+					
+					<div class="info-why-choose">
+						<h2>Support online 24/7</h2>
+						<div class="des-why-choose">Hac habitant eius lacinia harum, repellat aperiam ex hac consequatur lectus per, metus ullam facilis suscipit curae eaque gravida hac</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-lg-4 col-md-4">
+			<div class="block-whychoose">
+				<div class="why-choose-content">
+					<div class="image-why-choose">
+						<img src="{{media url="wysiwyg/why-choose-us/choose-5.png"}}" alt="Choose" />
+					</div>
+					
+					<div class="info-why-choose">
+						<h2>Free delivery for all our stock</h2>
+						<div class="des-why-choose">Hac habitant eius lacinia harum, repellat aperiam ex hac consequatur lectus per, metus ullam</div>
+					</div>
+				</div>
+				
+				<div class="why-choose-content">
+					<div class="image-why-choose">
+						<img src="{{media url="wysiwyg/why-choose-us/choose-6.png"}}" alt="Choose" />
+					</div>
+					
+					<div class="info-why-choose">
+						<h2>Secure Online Shopping</h2>
+						<div class="des-why-choose">Hac habitant eius lacinia harum, repellat aperiam ex hac consequatur lectus per, metus ullam facilis suscipit curae eaque gravida hac</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>About Us</title>
+      <identifier>about-us</identifier>
+      <content><![CDATA[<div class="about-us-wrapper">
+	<div class="block-top">
+		<div class="row">
+			<div class="col-lg-9 col-md-9">
+				{{block type="cms/block" name="welcome_store" block_id="about-us-welcome-to-shop"}} 
+			</div>
+			
+			<div class="col-lg-3 col-md-3">
+				{{block type="cms/block" name="why_choose_us" block_id="about-us-why-choose-us"}} 
+			</div>
+		</div>
+	</div>
+	
+	<div class="slider-our-member">
+		<div class="row">
+			<div class="col-lg-12 col-md-12">
+				{{block type="cms/block" name="slider_our_member" block_id="about-us-slider-our-member"}} 
+			</div>
+		</div>
+	</div>
+	
+	<div class="slider-customer-say">
+		<div class="row">
+			<div class="col-lg-12 col-md-12">
+				{{block type="cms/block" name="slider_happy_customer" block_id="about-us-slider-happy-customer-say"}} 
+			</div>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>About Us - Welcome To Shop</title>
+      <identifier>about-us-welcome-to-shop</identifier>
+      <content><![CDATA[<div class="welcome-to-shop">
+		<div class="title-about title-left">
+			<h2>Welcome To Shop</h2>
+		</div>
+					
+		<div class="content-about">
+			<div class="image-store-about">
+				<img src="{{media url="wysiwyg/about-us-page/about-store-image.jpg"}}" alt="About Us" />	
+			</div>
+						
+			<div class="info-store-about">
+				Nulla auctor mauris ut dui luctus semper. In hac habitasse platea dictumst. Duis pellentesque ligula a risus suscipit dignissim. Nunc non nisl lacus. Integer pharetra lacinia dapibus. Donec eu dolor dui, vel posuere mauris.<br>
+Pellentesque semper congue sodales. In consequat, metus eget con sequat ornare, augue dolor blandit purus, vitae lacinia nisi tellus in erat. Nulla ac justo eget massa aliquet sodales. Maecenas mattis male suada sem, in fringilla massa dapibus quis. Suspendisse aliquam leo id neque auctor molestie. Etiam at nulla tellus.<br>
+Nulla auctor mauris ut dui luctus semper. In hac habitasse platea dictumst. Duis pellentesque ligula a risus suscipit dignissim. 			
+			</div>
+		</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>About Us - Why Choose Us</title>
+      <identifier>about-us-why-choose-us</identifier>
+      <content><![CDATA[<div class="why-choose-about">
+					<div class="title-about title-left">
+						<h2>Why Choose Us</h2>
+					</div>
+					
+					<div class="content-about">
+						<ul class="list-why-choose">
+							<li><a href="#" title="Shipping & Returns">Shipping & Returns</a></li>
+							<li><a href="#" title="Secure Shopping">Secure Shopping</a></li>
+							<li><a href="#" title="International Shipping">International Shipping</a></li>
+							<li><a href="#" title="Affiliates">Affiliates</a></li>
+							<li><a href="#" title="Group Sales">Group Sales</a></li>
+						</ul>
+					</div>
+				</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>About Us - Slider Our Member</title>
+      <identifier>about-us-slider-our-member</identifier>
+      <content/>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>About Us - Happy Customer Say</title>
+      <identifier>about-us-slider-happy-customer-say</identifier>
+      <content/>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Contact Us Info Store</title>
+      <identifier>info-store</identifier>
+      <content><![CDATA[<div class="col-md-3 col-sm-6 store-info">
+<ul class="list-info">
+<li class="item-info main-info">
+<div class="info-content">
+<h2><a title="Main office" href="#">Main office</a></h2>
+<div class="des-info">Sed ut perspiciatis unde omnis 123456 Street Name, Los Angeles</div>
+</div>
+</li>
+<li class="item-info email-info">
+<div class="info-content">
+<h2>Email</h2>
+<div class="des-info"><a class="mailto" title="Send Email" href="mailto:Support1@shopname.com">Support1@shopname.com</a><br /> <a class="mailto" title="Send Email" href="mailto:Support2@shopname.com">Support2@shopname.com</a></div>
+</div>
+</li>
+<li class="item-info phone-info">
+<div class="info-content">
+<h2>Phone</h2>
+<div class="des-info"><a class="call-phone" title="Call: 0123-4567-8910" href="tel:0123-4567-8910">0123-4567-8910</a><br /> <a class="call-phone" title="Call: 0123-4567-8910" href="tel:0123-4567-8910">0123-4567-8910</a></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-6 store-info">
+<ul class="list-info">
+<li class="item-info main-info">
+<div class="info-content">
+<h2><a title="Branch 01" href="#">Branch 01</a></h2>
+<div class="des-info">Sed ut perspiciatis unde omnis 123456 Street Name, Los Angeles</div>
+</div>
+</li>
+<li class="item-info email-info">
+<div class="info-content">
+<h2>Email</h2>
+<div class="des-info"><a class="mailto" title="Send Email" href="mailto:Support1@shopname.com">Support1@shopname.com</a><br /> <a class="mailto" title="Send Email" href="mailto:Support2@shopname.com">Support2@shopname.com</a></div>
+</div>
+</li>
+<li class="item-info phone-info">
+<div class="info-content">
+<h2>Phone</h2>
+<div class="des-info"><a class="call-phone" title="Call: 0123-4567-8910" href="tel:0123-4567-8910">0123-4567-8910</a><br /> <a class="call-phone" title="Call: 0123-4567-8910" href="tel:0123-4567-8910">0123-4567-8910</a></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-6 store-info">
+<ul class="list-info">
+<li class="item-info main-info">
+<div class="info-content">
+<h2><a title="Branch 02" href="#">Branch 02</a></h2>
+<div class="des-info">Sed ut perspiciatis unde omnis 123456 Street Name, Los Angeles</div>
+</div>
+</li>
+<li class="item-info email-info">
+<div class="info-content">
+<h2>Email</h2>
+<div class="des-info"><a class="mailto" title="Send Email" href="mailto:Support1@shopname.com">Support1@shopname.com</a><br /> <a class="mailto" title="Send Email" href="mailto:Support2@shopname.com">Support2@shopname.com</a></div>
+</div>
+</li>
+<li class="item-info phone-info">
+<div class="info-content">
+<h2>Phone</h2>
+<div class="des-info"><a class="call-phone" title="Call: 0123-4567-8910" href="tel:0123-4567-8910">0123-4567-8910</a><br /> <a class="call-phone" title="Call: 0123-4567-8910" href="tel:0123-4567-8910">0123-4567-8910</a></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-6 store-info">
+<ul class="list-info">
+<li class="item-info main-info">
+<div class="info-content">
+<h2><a title="Branch 03" href="#">Branch 03</a></h2>
+<div class="des-info">Sed ut perspiciatis unde omnis 123456 Street Name, Los Angeles</div>
+</div>
+</li>
+<li class="item-info email-info">
+<div class="info-content">
+<h2>Email</h2>
+<div class="des-info"><a class="mailto" title="Send Email" href="mailto:Support1@shopname.com">Support1@shopname.com</a><br /> <a class="mailto" title="Send Email" href="mailto:Support2@shopname.com">Support2@shopname.com</a></div>
+</div>
+</li>
+<li class="item-info phone-info">
+<div class="info-content">
+<h2>Phone</h2>
+<div class="des-info"><a class="call-phone" title="Call: 0123-4567-8910" href="tel:0123-4567-8910">0123-4567-8910</a><br /> <a class="call-phone" title="Call: 0123-4567-8910" href="tel:0123-4567-8910">0123-4567-8910</a></div>
+</div>
+</li>
+</ul>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Contact Us Google Map</title>
+      <identifier>google-map</identifier>
+      <content/>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Collection</title>
+      <identifier>collection-tab</identifier>
+      <content><![CDATA[		
+<div id="tab_collection">
+	<div class="title-home">
+		<h2>Collections</h2>
+	</div>
+
+    <ul class="resp-tabs-list">
+        <li class="fa fa-coffee">LifeStyle</li>
+        <li class="fa fa-sun-o">Out Doors</li>
+        <li class="fa fa-home">Clearance</li>
+        <li class="fa fa-gift">Gifts & Holidays</li>
+        <li class="fa fa-cogs">Cool Gadets</li>
+        <li class="fa fa-star">Novelties</li>
+        <li class="fa fa-leaf">beauty care</li>
+    </ul>
+	
+    <div class="resp-tabs-container">
+	
+        <div>
+            <div class="content-tab-collection">
+				<div class="row">
+					<ul class="list-item-collection">
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Golf Relate Prodcuts" href="#">Golf Relate Prodcuts</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-1.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Bicycle equipments" href="#">Bicycle equipments</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-2.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Binocular & Telescops" href="#">Binocular & Telescops</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-3.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Camping & Hiking" href="#">Camping & Hiking</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-4.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Fishing" href="#">Fishing</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-5.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Team Sports" href="#">Team Sports</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-6.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+        </div>
+		
+        <div>
+            <div class="content-tab-collection">
+				<div class="row">
+					<ul class="list-item-collection">
+						
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Bicycle equipments" href="#">Bicycle equipments</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-2.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Golf Relate Prodcuts" href="#">Golf Relate Prodcuts</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-1.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Camping & Hiking" href="#">Camping & Hiking</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-4.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Binocular & Telescops" href="#">Binocular & Telescops</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-3.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Fishing" href="#">Fishing</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-5.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Team Sports" href="#">Team Sports</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-6.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+        </div>
+		
+        <div>
+            <div class="content-tab-collection">
+				<div class="row">
+					<ul class="list-item-collection">
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Golf Relate Prodcuts" href="#">Golf Relate Prodcuts</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-1.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+	
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Binocular & Telescops" href="#">Binocular & Telescops</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-3.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Bicycle equipments" href="#">Bicycle equipments</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-2.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Fishing" href="#">Fishing</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-5.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Team Sports" href="#">Team Sports</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-6.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Camping & Hiking" href="#">Camping & Hiking</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-4.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+        </div>
+		
+		<div>
+            <div class="content-tab-collection">
+				<div class="row">
+					<ul class="list-item-collection">
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Binocular & Telescops" href="#">Binocular & Telescops</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-3.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Golf Relate Prodcuts" href="#">Golf Relate Prodcuts</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-1.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Bicycle equipments" href="#">Bicycle equipments</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-2.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Fishing" href="#">Fishing</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-5.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Camping & Hiking" href="#">Camping & Hiking</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-4.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Team Sports" href="#">Team Sports</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-6.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+        </div>
+		
+		<div>
+            <div class="content-tab-collection">
+				<div class="row">
+					<ul class="list-item-collection">
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Bicycle equipments" href="#">Bicycle equipments</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-2.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Golf Relate Prodcuts" href="#">Golf Relate Prodcuts</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-1.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Binocular & Telescops" href="#">Binocular & Telescops</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-3.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Fishing" href="#">Fishing</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-5.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Camping & Hiking" href="#">Camping & Hiking</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-4.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Team Sports" href="#">Team Sports</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-6.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+        </div>
+		
+		<div>
+            <div class="content-tab-collection">
+				<div class="row">
+					<ul class="list-item-collection">
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Team Sports" href="#">Team Sports</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-6.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Golf Relate Prodcuts" href="#">Golf Relate Prodcuts</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-1.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Binocular & Telescops" href="#">Binocular & Telescops</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-3.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Bicycle equipments" href="#">Bicycle equipments</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-2.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Camping & Hiking" href="#">Camping & Hiking</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-4.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Fishing" href="#">Fishing</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-5.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+        </div>
+		
+		<div>
+            <div class="content-tab-collection">
+				<div class="row">
+					<ul class="list-item-collection">
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Bicycle equipments" href="#">Bicycle equipments</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-2.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Golf Relate Prodcuts" href="#">Golf Relate Prodcuts</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-1.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Binocular & Telescops" href="#">Binocular & Telescops</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-3.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Team Sports" href="#">Team Sports</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-6.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Camping & Hiking" href="#">Camping & Hiking</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-4.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 item-cat">
+							<div class="item-cat-wrapper">
+								<div class="text-cat">
+									<h2><a title="Fishing" href="#">Fishing</a></h2>
+									<p class="des-collection-cat">Ab inventore asperiores</p>
+									<a class="button" href="#" title="Shop Now">Shop Now</a>
+								</div>
+								
+								<div class="image-cat">
+									<img src="{{media url="wysiwyg/collection/img-cat-5.gif"}}" alt="Collection" />
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+        </div>
+		
+    </div>
+	
+</div>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('#tab_collection').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion           
+            width: 'auto', //auto or any width like 600px
+            fit: true,   // 100% fit in a container
+            closed: 'accordion', // Start closed if in accordion view
+        });
+    });
+</script>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Services Top Index 2</title>
+      <identifier>service-top-index2</identifier>
+      <content><![CDATA[<div class="services-top-wrapper">
+	<div class="col-lg-4 col-md-4">
+		<div class="service-inner">
+			<div class="icon-service">
+				<a class="fa fa-paper-plane-o" href="#" title="Free Shipping">
+					<span>Free Shipping</span>
+				</a>
+			</div>
+			
+			<div class="info-service">
+				<h2><a href="#" title="Free Shipping">Free Shipping</a></h2>
+				<p>Maecenas eros risus, viverra vitae sapien quis posuere malesuada orci.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-md-4">
+		<div class="service-inner">
+			<div class="icon-service">
+				<a class="fa fa-retweet" href="#" title="30 Days Quarrantee Money Back">
+					<span>30 Days Quarrantee Money Back</span>
+				</a>
+			</div>
+			
+			<div class="info-service">
+				<h2><a href="#" title="Free Shipping">30 Days Quarrantee Money Back</a></h2>
+				<p>Maecenas eros risus, viverra vitae sapien quis posuere malesuada orci.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-md-4">
+		<div class="service-inner">
+			<div class="icon-service">
+				<a class="fa fa-gift" href="#" title="Free Giftcode every wenesdays ">
+					<span>Free Giftcode every wenesdays </span>
+				</a>
+			</div>
+			
+			<div class="info-service">
+				<h2><a href="#" title="Free Giftcode every wenesdays ">Free Giftcode every wenesdays </a></h2>
+				<p>Maecenas eros risus, viverra vitae sapien quis posuere malesuada orci.</p>
+			</div>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Static Image Center 1 Index 2</title>
+      <identifier>four-static-image-index2</identifier>
+      <content><![CDATA[<div class="four-static-image">
+	<ul>
+		<li class="item-static"><a href="#" title="Static Image"><img src="{{media url="wysiwyg/home-page-image/st1-index-2.jpg"}}" alt="Static Image" /></a></li>
+		<li class="item-static"><a href="#" title="Static Image"><img src="{{media url="wysiwyg/home-page-image/st2-index-2.jpg"}}" alt="Static Image" /></a></li>
+		<li class="item-static">
+			<a href="#" title="Static Image"><img src="{{media url="wysiwyg/home-page-image/st3-index-2.jpg"}}" alt="Static Image" /></a>
+			<a href="#" title="Static Image"><img src="{{media url="wysiwyg/home-page-image/st4-index-2.jpg"}}" alt="Static Image" /></a>
+		</li>
+	</ul>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Brand Slider</title>
+      <identifier>brand-slider</identifier>
+      <content><![CDATA[<div class="brand-slider-wrapper">
+	<div class="brand-slider">
+		<div><a title="Brand Image" href="#"><img src="{{media url="wysiwyg/brand/brand-1.jpg"}}" alt="Brand Image" /></a></div>
+		<div><a title="Brand Image" href="#"><img src="{{media url="wysiwyg/brand/brand-2.jpg"}}" alt="Brand Image" /></a></div>
+		<div><a title="Brand Image" href="#"><img src="{{media url="wysiwyg/brand/brand-3.jpg"}}" alt="Brand Image" /></a></div>
+		<div><a title="Brand Image" href="#"><img src="{{media url="wysiwyg/brand/brand-4.jpg"}}" alt="Brand Image" /></a></div>
+		<div><a title="Brand Image" href="#"><img src="{{media url="wysiwyg/brand/brand-5.jpg"}}" alt="Brand Image" /></a></div>
+		<div><a title="Brand Image" href="#"><img src="{{media url="wysiwyg/brand/brand-6.jpg"}}" alt="Brand Image" /></a></div>
+		<div><a title="Brand Image" href="#"><img src="{{media url="wysiwyg/brand/brand-7.jpg"}}" alt="Brand Image" /></a></div>
+		<div><a title="Brand Image" href="#"><img src="{{media url="wysiwyg/brand/brand-8.jpg"}}" alt="Brand Image" /></a></div>
+	</div>
+	
+	<script>
+		jQuery(document).ready(function($) {
+			var owl_brand = $(".brand-slider");
+			owl_brand.owlCarousel({
+
+				responsive:{
+					0:{
+						items:2
+					},
+					480:{
+						items:3
+					},
+					768:{
+						items:4
+					},
+					992:{
+						items:4
+					},
+					1200:{
+						items:6
+					}
+				},
+				
+				autoplay:false,
+				loop:false,
+				nav : true, // Show next and prev buttons
+				dots: false,
+				autoplaySpeed : 500,
+				navSpeed : 500,
+				dotsSpeed : 500,
+				autoplayHoverPause: true,
+				margin:30,
+				rtl: false,
+			});	 
+
+		});	
+	</script>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Static Center 1 Index 3</title>
+      <identifier>center-image-index3</identifier>
+      <content><![CDATA[<div class="st-image-thr">
+<ul>
+<li><a href="#" title="Static Image"><img src="{{media url="wysiwyg/home-page-image/st1-index3.jpg"}}" alt="Static Image" /></a></li>
+<li><a href="#" title="Static Image"><img src="{{media url="wysiwyg/home-page-image/st2-index3.jpg"}}" alt="Static Image" /></a></li>
+<li><a href="#" title="Static Image"><img src="{{media url="wysiwyg/home-page-image/st3-index3.jpg"}}" alt="Static Image" /></a></li>
+</ul>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Testimonials Home 3</title>
+      <identifier>slider-testimonials-home3</identifier>
+      <content><![CDATA[<div class="overflow-slider testimonials">
+	<div class="title-home">
+		<h2>Testimonials</h2>
+	</div>
+	
+	<div class="margin-slider">
+		<ul class="testimonials-slider">
+			<li class="item">
+				<div class="client-child client-left">
+					<div class="comment">
+						Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam! Scelerisque nascetur nascetur aliquet platea. Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam!
+					</div>
+					
+					<div class="client client-left">
+						<div class="image-client">
+							<img src="{{media url="wysiwyg/testimonial/client-1.png"}}" alt="Venus" />
+						</div>
+						<div class="info-client">
+							<h2 class="client-name">Venus</h2>
+							<div class="client-job">Market Research</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+			<li class="item">
+				<div class="client-child client-left">
+					<div class="comment">
+						Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam! Scelerisque nascetur nascetur aliquet platea. Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam!
+					</div>
+					
+					<div class="client client-left">
+						<div class="image-client">
+							<img src="{{media url="wysiwyg/testimonial/client-1.png"}}" alt="Venus" />
+						</div>
+						<div class="info-client">
+							<h2 class="client-name">Venus</h2>
+							<div class="client-job">Market Research</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+			<li class="item">
+				<div class="client-child client-left">
+					<div class="comment">
+						Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam! Scelerisque nascetur nascetur aliquet platea. Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam!
+					</div>
+					
+					<div class="client client-left">
+						<div class="image-client">
+							<img src="{{media url="wysiwyg/testimonial/client-1.png"}}" alt="Venus" />
+						</div>
+						<div class="info-client">
+							<h2 class="client-name">Venus</h2>
+							<div class="client-job">Market Research</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="item">
+				<div class="client-child client-left">
+					<div class="comment">
+						Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam! Scelerisque nascetur nascetur aliquet platea. Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam!
+					</div>
+					
+					<div class="client client-left">
+						<div class="image-client">
+							<img src="{{media url="wysiwyg/testimonial/client-1.png"}}" alt="Venus" />
+						</div>
+						<div class="info-client">
+							<h2 class="client-name">Venus</h2>
+							<div class="client-job">Market Research</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+			<li class="item">
+				<div class="client-child client-left">
+					<div class="comment">
+						Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam! Scelerisque nascetur nascetur aliquet platea. Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam!
+					</div>
+					
+					<div class="client client-left">
+						<div class="image-client">
+							<img src="{{media url="wysiwyg/testimonial/client-1.png"}}" alt="Venus" />
+						</div>
+						<div class="info-client">
+							<h2 class="client-name">Venus</h2>
+							<div class="client-job">Market Research</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+			<li class="item">
+				<div class="client-child client-left">
+					<div class="comment">
+						Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam! Scelerisque nascetur nascetur aliquet platea. Ultrices lectus tempor, magna mauris porta magnis tristique, egestas etiam!
+					</div>
+					
+					<div class="client client-left">
+						<div class="image-client">
+							<img src="{{media url="wysiwyg/testimonial/client-1.png"}}" alt="Venus" />
+						</div>
+						<div class="info-client">
+							<h2 class="client-name">Venus</h2>
+							<div class="client-job">Market Research</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<script>
+		jQuery(document).ready(function($) {
+			var owl_testimonial = $(".testimonials-slider");
+			owl_testimonial.owlCarousel({
+				responsive:{
+					0:{
+						items:1
+					},
+					480:{
+						items:1
+					},
+					768:{
+						items:1
+					},
+					992:{
+						items:1
+					},
+					1200:{
+						items:1
+					}
+				},
+				
+				autoplay:false,
+				loop:false,
+				nav : true, // Show next and prev buttons
+				dots: false,
+				autoplaySpeed : 500,
+				navSpeed : 500,
+				dotsSpeed : 500,
+				autoplayHoverPause: true,
+				margin:30,
+			});
+		});
+
+	</script>
+</div>]]></content>
+      <is_active>1</is_active>
+      <block_store_id>8</block_store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Image Sidebar</title>
+      <identifier>image-static-sidebar</identifier>
+      <content><![CDATA[<div style="margin-bottom:30px;">
+<a title="Static Image" href="#"><img src="{{media url="wysiwyg/sidebar/img-sidebar.jpg"}}" alt="Static Image" /></a>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Product Sidebar</title>
+      <identifier>product-sidebar</identifier>
+      <content><![CDATA[{{block type="basicproducts/list" name="basicproducts.list.sidebar" template="sm/basicproducts/product-sidebar.phtml"
+				product_limitation="4"
+				basicproducts_title_text="Recommend"
+				product_order_dir="ASC"
+				product_order_by="best_sales"
+				product_title_maxlength="50"
+				product_title_display="1"
+				product_price_display="1"
+				product_reviews_count="1"
+				product_addcart_display="0"
+				product_addwishlist_display="0"
+				product_addcompare_display="0"
+				product_readmore_display="0"
+				product_description_display="0"
+}}]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+  </blocks>
+</root>

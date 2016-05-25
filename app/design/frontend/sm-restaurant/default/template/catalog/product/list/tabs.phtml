@@ -1,0 +1,35 @@
+<div class="list-product-custom-tabs">
+    <div class="tab-product-list" id="tab-product-list">
+        <ul class="resp-tabs-list">
+            <li class="first"><?php echo $this->__('Related')?></li>
+            <li><?php echo $this->__('Up-Sell')?></li>
+        </ul>
+        <div class="resp-tabs-container">
+            <?php echo $this->getLayout()->createBlock('catalog/product_list_related')->setTemplate('catalog/product/list/related.phtml')->toHtml(); ?>
+            <?php echo $this->getLayout()->createBlock('catalog/product_list_upsell')->setTemplate('catalog/product/list/upsell.phtml')->toHtml(); ?>
+        </div>
+
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $('#tab-product-list').easyResponsiveTabs({
+                    type: 'default', //Types: default, vertical, accordion
+//                    width: 'auto', //auto or any width like 600px
+                    fit: true,   // 100% fit in a container
+                    closed: 'accordion' // Start closed if in accordion view
+                    /* activate: function(event) {
+                     console.log('actived');
+                     } */
+                });
+             var upsell_check = $('.content-product.box-up-sell').text();
+                var relate_check = $('.content-product.box-related').text();
+                if(upsell_check.length == 0) {
+                    $('.list-product-custom-tabs .resp-tabs-list .resp-tab-item:first-child').hide();
+                }
+                if(relate_check.length == 0) {
+                    $('.list-product-custom-tabs .resp-tabs-list .resp-tab-item:last-child').hide();
+                }   
+        });
+        </script>
+    </div>
+
+</div>

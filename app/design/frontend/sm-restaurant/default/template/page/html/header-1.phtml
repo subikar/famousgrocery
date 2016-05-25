@@ -1,0 +1,117 @@
+<div class="header-container header-style-1">
+    <div id="home" class="header">
+		<div class="header-inner">
+			<div class="header-top">
+				<div class="container custom">
+					<div class="row custom">
+						<div class="col-lg-4 col-md-4 hidden-sm">
+                            <div class="block-welcome">
+                                <div class="welcome-msg custom">
+                                    <p class="welcome-msg">
+                                        <?php if(!$this->helper('customer')->isLoggedIn()){?>
+                                            <?php echo $this->__('Welcome visitor!') ?>
+                                            <a href="<?php echo $this->getUrl('customer/account/create')?>" class="register-btn" title="<?php echo $this->__('Register')?>"><?php echo $this->__('Register')?></a>
+                                            <?php echo $this->__('or') ?>
+                                            <a href="#" class="login-btn" data-toggle="modal" data-target="#modal-login" title="<?php echo $this->__('Sign in')?>"><?php echo $this->__('Sign in')?></a>
+                                        <?php } else{?>
+                                            <a class="logout-btn" href="<?php echo $this->getUrl('customer/account/logout')?>" title="<?php echo $this->__('Logout');?>"><?php echo $this->__('Logout');?></a>
+                                        <?php } ?>
+                                    </p>
+                                </div>
+                            </div>
+						</div>
+						<div class="col-lg-8 col-md-8 col-sm-12 customer-wrapper">
+							<div class="header-link-right">
+								<div class="block-account-cusomer">
+									<div class="toplink-cus my-account">
+										<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('dropdown-my-account')->toHtml(); ?>
+									</div>
+								</div>
+								<div class="block-account-cusomer link-base">
+									<?php echo $this->getChildHtml('topLinks') ?>
+								</div>
+                                <?php echo $this->getChildHtml('currency') ?>
+                                <?php echo $this->getChildHtml('store_language') ?>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php echo $this->getChildHtml('customer_form_mini_login'); ?>
+			<div class="header-bottom">
+				<div class="container custom">
+					<div class="row custom">
+						<div class="col-lg-2 col-md-2 logo-wrapper">
+							<h1 class="logo">
+								<strong><?php echo $this->getLogoAlt() ?></strong>
+								<a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo">
+									<img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" />
+								</a>
+							</h1>
+						</div>
+						<div class="col-lg-10 col-md-10 header-bottom-right">
+                            <div class="minicart-header">
+                                <?php echo $this->getChildHtml('mini-cartpro'); ?>
+                            </div>
+                            <div class="block-search">
+                                <?php echo $this->getChildHtml('topSearch'); ?>
+                            </div>
+                            <div class="yt-menu">
+                                <div class="menu-under">
+                                    <div class="menu-larger">
+                                        <div class="container custom">
+                                            <div class="row custom">
+                                                <?php //if( $var_yttheme->getParam('menustyle')=='mega' ){ ?>
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <?php echo $this->getChildHtml('megaMenu'); ?>
+                                                    </div>
+                                                <?php //} else { ?>
+<!--                                                    <div class="col-lg-12 col-md-12">-->
+<!--                                                        --><?php //echo $this->getChildHtml('topMenu'); ?>
+<!--                                                    </div>-->
+                                                <?php //} ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-menu">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <?php echo $this->getChildHtml('catalog.topmobinav'); ?>
+                                                    <div class="block-right-mobile">
+                                                        <div class="block-mobile block-customer">
+                                                            <a class="fa fa-user icon-mobile icon-customer"></a>
+                                                            <div class="dropdown-mobile dropdown-custommer-mobile">
+                                                                <ul>
+                                                                    <?php if(!$this->helper('customer')->isLoggedIn()){?>
+                                                                        <li>
+                                                                            <a class="login-link-mobile" href="<?php echo $this->getUrl('customer/account/login')?>" title="<?php echo $this->__('Login');?>"><?php echo $this->__('Login');?></a>
+                                                                        </li>
+                                                                    <?php } else{?>
+                                                                        <li>
+                                                                            <a class="logout-link-mobile" href="<?php echo $this->getUrl('customer/account/logout')?>" title="<?php echo $this->__('Logout');?>"><?php echo $this->__('Logout');?></a>
+                                                                        </li>
+                                                                    <?php } ?>
+                                                                </ul>
+                                                                <?php echo $this->getChildHtml('topLinks') ?>
+                                                                <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('dropdown-my-account')->toHtml(); ?>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <?php echo $this->getChildHtml('topContainer'); ?>
+        <?php if(strpos(Mage::getSingleton('cms/page')->getIdentifier(), 'home') !== false   && Mage::app()->getFrontController()->getRequest()->getRouteName() == 'cms'): ?>
+            <?php echo $this->getChildHtml('camera-slide'); ?>
+        <?php endif; ?>
+    </div>
+</div>

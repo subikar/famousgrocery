@@ -1,0 +1,481 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+
+<?php
+	$config = Mage::helper('restaurant/config');
+	$boxed_width = $config->getThemeLayout('layout_styles');
+	$cmsStyle = $config->getThemeLayout('cmspage_style');
+
+?>
+
+<body class="<?php echo $this->getBodyClass(); if($boxed_width == 2){echo " boxed-layout";} echo " ".$cmsStyle?>">
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page">
+        <?php echo $this->getChildHtml('header') ?>
+        <div class="main-container col1-layout">
+            <div class="main">
+                <?php echo $this->getChildHtml('breadcrumbs') ?>
+                <div class="col-main">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 col-md-12">
+								<?php echo $this->getChildHtml('global_messages') ?>
+								<?php echo $this->getChildHtml('content') ?>
+							</div>
+						</div>
+					</div>
+                    
+					<!-- LAYOUT -->
+					<!--Group 1-->
+                    <div class="yt-slideshow" style="max-width:1920px" >
+                        <?php echo $this->getChildHtml('camera-slide'); ?>
+                    </div>
+					<?php if($config->getThemeLayout('show_group1')){?>
+					<div class="group_1">
+						<div class="group_1_wrapper">
+							<div class="container">
+								<div class="row">
+									<?php
+										$col_lg = $config->getThemeLayout('group1_col1');
+									?>
+									<?php if($this->getChildHtml('group1_col1') && $col_lg != '0'){ ?>
+									<div class="col1 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group1_col1') ?>
+									</div>
+									<?php } ?>
+									
+									<?php
+										$col_lg = $config->getThemeLayout('group1_col2');
+									?>
+									<?php if($this->getChildHtml('group1_col2') && $col_lg != '0'){ ?>
+									<div class="col2 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group1_col2') ?>
+									</div>
+									<?php } ?>
+									
+									<?php
+										$col_lg = $config->getThemeLayout('group1_col3');
+									?>
+									<?php if($this->getChildHtml('group1_col3') && $col_lg != '0'){ ?>
+									<div class="col3 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group1_col3') ?>
+									</div>
+									<?php } ?>
+									
+									<?php
+										$col_lg = $config->getThemeLayout('group1_col4');
+									?>
+									<?php if($this->getChildHtml('group1_col4') && $col_lg != '0'){ ?>
+									<div class="col4 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group1_col4') ?>
+									</div>
+									<?php } ?>
+									
+									<?php
+										$col_lg = $config->getThemeLayout('group1_col5');
+									?>
+									<?php if($this->getChildHtml('group1_col5') && $col_lg != '0'){ ?>
+									<div class="col5 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group1_col5') ?>
+									</div>
+									<?php } ?>
+									
+									<?php
+										$col_lg = $config->getThemeLayout('group1_col6');
+									?>
+									<?php if($this->getChildHtml('group1_col6') && $col_lg != '0'){ ?>
+									<div class="col6 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group1_col6') ?>
+									</div>
+									<?php } ?>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<?php } ?>
+					<!--End Group 1-->
+					
+					<!--Group 2-->
+					<?php if($config->getThemeLayout('show_group2')){?>
+					<div class="group_2">
+						<div class="group_2_wrapper">
+							<div class="container">
+								<div class="row">
+									<?php
+										$col_lg = $config->getThemeLayout('group2_col1');
+									?>
+									<?php if($this->getChildHtml('group2_col1') && $col_lg != '0'){ ?>
+									<div class="col1 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group2_col1') ?>
+									</div>
+									<?php } ?>
+									
+									<?php
+										$col_lg = $config->getThemeLayout('group2_col2');
+									?>
+									<?php if($this->getChildHtml('group2_col2') && $col_lg != '0'){ ?>
+									<div class="col2 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group2_col2') ?>
+									</div>
+									<?php } ?>
+									
+									<?php
+										$col_lg = $config->getThemeLayout('group2_col3');
+									?>
+									<?php if($this->getChildHtml('group2_col3') && $col_lg != '0'){ ?>
+									<div class="col3 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group2_col3') ?>
+									</div>
+									<?php } ?>
+									
+									<?php
+										$col_lg = $config->getThemeLayout('group2_col4');
+									?>
+									<?php if($this->getChildHtml('group2_col4') && $col_lg != '0'){ ?>
+									<div class="col4 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group2_col4') ?>
+									</div>
+									<?php } ?>
+									
+									<?php
+										$col_lg = $config->getThemeLayout('group2_col5');
+									?>
+									<?php if($this->getChildHtml('group2_col5') && $col_lg != '0'){ ?>
+									<div class="col5 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group2_col5') ?>
+									</div>
+									<?php } ?>
+									
+									<?php
+										$col_lg = $config->getThemeLayout('group2_col6');
+									?>
+									<?php if($this->getChildHtml('group2_col6') && $col_lg != '0'){ ?>
+									<div class="col6 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group2_col6') ?>
+									</div>
+									<?php } ?>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<?php } ?>
+					<!--End Group 2-->
+					
+					<!--Group 3-->
+					<?php if($config->getThemeLayout('show_group3')){?>
+					<div class="group_3">
+						<div class="group_3_wrapper">
+							<div class="container">
+								<div class="row">
+									<?php
+										$col_lg = $config->getThemeLayout('group3_col1');
+									?>
+									<?php if($this->getChildHtml('group3_col1') && $col_lg != '0'){ ?>
+									<div class="col1 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group3_col1') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group3_col2');
+									?>
+									<?php if($this->getChildHtml('group3_col2') && $col_lg != '0'){ ?>
+									<div class="col2 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group3_col2') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group3_col3');
+									?>
+									<?php if($this->getChildHtml('group3_col3') && $col_lg != '0'){ ?>
+									<div class="col3 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group3_col3') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group3_col4');
+									?>
+									<?php if($this->getChildHtml('group3_col4') && $col_lg != '0'){ ?>
+									<div class="col4 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group3_col4') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group3_col5');
+									?>
+									<?php if($this->getChildHtml('group3_col5') && $col_lg != '0'){ ?>
+									<div class="col5 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group3_col5') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group3_col6');
+									?>
+									<?php if($this->getChildHtml('group3_col6') && $col_lg != '0'){ ?>
+									<div class="col6 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group3_col6') ?>
+									</div>
+									<?php } ?>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<?php } ?>
+					<!--End Group 3-->
+					
+					<!--Group 4-->
+					<?php if($config->getThemeLayout('show_group4')){?>
+					<div class="group_4">
+						<div class="group_4_wrapper">
+							<div class="container">
+								<div class="row">
+									<?php
+										$col_lg = $config->getThemeLayout('group4_col1');
+									?>
+									<?php if($this->getChildHtml('group4_col1') && $col_lg != '0'){ ?>
+									<div class="col1 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group4_col1') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group4_col2');
+									?>
+									<?php if($this->getChildHtml('group4_col2') && $col_lg != '0'){ ?>
+									<div class="col2 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group4_col2') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group4_col3');
+									?>
+									<?php if($this->getChildHtml('group4_col3') && $col_lg != '0'){ ?>
+									<div class="col3 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group4_col3') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group4_col4');
+									?>
+									<?php if($this->getChildHtml('group4_col4') && $col_lg != '0'){ ?>
+									<div class="col4 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group4_col4') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group4_col5');
+									?>
+									<?php if($this->getChildHtml('group4_col5') && $col_lg != '0'){ ?>
+									<div class="col5 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group4_col5') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group4_col6');
+									?>
+									<?php if($this->getChildHtml('group4_col6') && $col_lg != '0'){ ?>
+									<div class="col6 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group4_col6') ?>
+									</div>
+									<?php } ?>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<?php } ?>
+					<!--End Group 4-->
+					
+					<!--Group 5-->
+					<?php if($config->getThemeLayout('show_group5')){?>
+					<div class="group_5">
+						<div class="group_5_wrapper">
+							<div class="container">
+								<div class="row">
+									<?php
+										$col_lg = $config->getThemeLayout('group5_col1');
+									?>
+									<?php if($this->getChildHtml('group5_col1') && $col_lg != '0'){ ?>
+									<div class="col1 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group5_col1') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group5_col2');
+									?>
+									<?php if($this->getChildHtml('group5_col2') && $col_lg != '0'){ ?>
+									<div class="col2 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group5_col2') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group5_col3');
+									?>
+									<?php if($this->getChildHtml('group5_col3') && $col_lg != '0'){ ?>
+									<div class="col3 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group5_col3') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group5_col4');
+									?>
+									<?php if($this->getChildHtml('group5_col4') && $col_lg != '0'){ ?>
+									<div class="col4 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group5_col4') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group5_col5');
+									?>
+									<?php if($this->getChildHtml('group5_col5') && $col_lg != '0'){ ?>
+									<div class="col5 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group5_col5') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group5_col6');
+									?>
+									<?php if($this->getChildHtml('group5_col6') && $col_lg != '0'){ ?>
+									<div class="col6 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group5_col6') ?>
+									</div>
+									<?php } ?>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<?php } ?>
+					<!--End Group 5-->
+					
+					<!--Group 6-->
+					<?php if($config->getThemeLayout('show_group6')){?>
+					<div class="group_6">
+						<div class="group_6_wrapper">
+							<div class="container">
+								<div class="row">
+									<?php
+										$col_lg = $config->getThemeLayout('group6_col1');
+									?>
+									<?php if($this->getChildHtml('group6_col1') && $col_lg != '0'){ ?>
+									<div class="col1 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group6_col1') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group6_col2');
+									?>
+									<?php if($this->getChildHtml('group6_col2') && $col_lg != '0'){ ?>
+									<div class="col2 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group6_col2') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group6_col3');
+									?>
+									<?php if($this->getChildHtml('group6_col3') && $col_lg != '0'){ ?>
+									<div class="col3 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group6_col3') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group6_col4');
+									?>
+									<?php if($this->getChildHtml('group6_col4') && $col_lg != '0'){ ?>
+									<div class="col4 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group6_col4') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group6_col5');
+									?>
+									<?php if($this->getChildHtml('group6_col5') && $col_lg != '0'){ ?>
+									<div class="col5 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group6_col5') ?>
+									</div>
+									<?php } ?>
+
+									<?php
+										$col_lg = $config->getThemeLayout('group6_col6');
+									?>
+									<?php if($this->getChildHtml('group6_col6') && $col_lg != '0'){ ?>
+									<div class="col6 <?php echo $col_lg;?>">
+										<?php echo $this->getChildHtml('group6_col6') ?>
+									</div>
+									<?php } ?>
+								</div>
+							</div>
+						</div>
+					</div>
+					<?php } ?>
+					<!--End Group 6-->
+					
+					<!-- END LAYOUT -->
+					
+                </div>
+            </div>
+        </div>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('global_cookie_notice') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+    </div>
+</div>
+<?php echo $this->getAbsoluteFooter() ?>
+</body>
+</html>

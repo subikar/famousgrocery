@@ -1,0 +1,309 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/**
+ * Product media data template
+ *
+ * @see Mage_Catalog_Block_Product_View_Media
+ */
+
+/* @var $this Mage_Catalog_Block_Product_View_Media */
+?>
+<?php
+$_product = $this->getProduct();
+$_helper  = $this->helper('catalog/output');
+$config   = Mage::helper('restaurant/config');
+$thumb_style = $config->getProductSetting('thumbs_style');
+$detail_style = $config->getProductSetting('detail_style');
+$image_helper = $this->helper('catalog/image');
+$image_gallery = $this->getGalleryImages();
+
+if (isset($_REQUEST['vertical'])) {
+	$vertical_style = intval($_REQUEST['vertical']);
+}
+
+?>
+<div class="<?php if($thumb_style != 'horizontal' || $vertical_style == 1) echo 'case-option-vertical'?>">
+	<div class="product-image product-image-zoom">
+		<div class="product-image-gallery">
+			<img id="image-main"
+				 class="gallery-image visible"
+				 src="<?php echo $image_helper->init($_product, 'image') ?>"
+				 alt="<?php echo $this->escapeHtml($this->getImageLabel()) ?>"
+				 title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>"/>
+
+			<?php $i = 0;
+			foreach ($image_gallery as $_image): ?>
+				<?php if ($this->isGalleryImageVisible($_image)): ?>
+					<img id="image-<?php echo $i; ?>"
+						 class="gallery-image"
+						 src="<?php echo $this->getGalleryImageUrl($_image); ?>"
+						 data-zoom-image="<?php echo $this->getGalleryImageUrl($_image); ?>"/>
+				<?php endif; ?>
+				<?php $i++; endforeach; ?>
+
+			<?php if (count($image_gallery) > 0) { ?>
+				<div class="btn-lightbox">
+				<?php $first = 0;
+				foreach ($image_gallery as $_image): ?>
+					<?php if ($this->isGalleryImageVisible($_image)): ?>
+						<a <?php if ($first == 0) echo 'id = "lightbox_btn"' ?> data-placement="top" data-toggle="tooltip" title="<?php echo $this->__('Gallery Images') ?>" class="fancybox-buttons" data-fancybox-group="thumb" href="<?php echo $image_helper->init($_product, 'thumbnail', $_image->getFile()); ?>" data-fancybox-group="gallery">
+
+						</a>
+						<?php $first = 1; endif; ?>
+				<?php endforeach; ?>
+			</div>
+			<?php } else { ?>
+				<div class="btn-lightbox">
+					<a id="lightbox_btn" title="<?php echo $this->__('Gallery Images') ?>" class="fancybox-buttons" data-fancybox-group="thumb" href="<?php echo $image_helper->init($_product, 'image') ?>" data-fancybox-group="gallery">
+
+					</a>
+				</div>
+			<?php } ?>
+		</div>
+	</div>
+
+	<?php if (count($image_gallery) > 0): ?>
+		<div class="more-views">
+			<ul class="product-image-thumbs">
+			<?php $i = 0;
+			foreach ($image_gallery as $_image): ?>
+				<?php if ($this->isGalleryImageVisible($_image)): ?>
+					<li>
+					<a class="thumb-link" href="javascript:void(0);" data-src-img="<?php echo $image_helper->init($_product, 'thumbnail', $_image->getFile()); ?>" title="<?php echo $this->escapeHtml($_image->getLabel()) ?>" data-image-index="<?php echo $i; ?>">
+						<img src="<?php echo $image_helper->init($_product, 'thumbnail', $_image->getFile())->resize(85, 63.75); ?>"
+							 alt="<?php echo $this->escapeHtml($_image->getLabel()) ?>"/>
+					</a>
+				</li>
+				<?php endif; ?>
+				<?php $i++; endforeach; ?>
+			</ul>
+		</div>
+	<?php endif; ?>
+
+</div>
+
+<script>
+    	jQuery(document).ready(function ($) {
+
+			/*======================ZOOM====================*/
+			<?php if($config->getProductSetting('use_zoom_image') == 1){?>
+			function zoom() {
+				$(".product-image-gallery .visible").elevateZoom({
+					easing: true,
+					loadingIcon: true,
+					zoomType: "<?php echo $config->getProductSetting('zoom_mode')?>",
+					cursor: "crosshair"
+				});
+			}
+
+			zoom();
+
+			$(".more-views .thumb-link").click(function () {
+				setTimeout(function () {
+					zoom();
+				}, 100);
+			});
+			<?php } ?>
+
+			/*==================JS FOR IMAGE BOX======================*/
+			var slider_thumbs_main = $(".product-image-thumbs").lightSlider({
+				//prevHtml: '',
+				//nextHtml: '',
+
+				//slideMove: 1,
+//				easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+				speed: 600,
+				auto: false,
+				loop: false,
+				rtl: false,
+				<?php if($thumb_style == 'horizontal' && $vertical_style != 1){?>
+					vertical: false,
+					item: 4,
+					slideMargin: 10,
+				<?php } else {?>
+					vertical: true,
+					slideMargin: 0,
+					<?php if($detail_style == 2 || $detail_style == 3){?>
+						verticalHeight: 276,
+						item: 4,
+					<?php } else {?>
+						verticalHeight: 320,
+						item: 4,
+					<?php } ?>
+				<?php } ?>
+
+
+				pager: false,
+				responsive: [
+
+				<?php if($thumb_style != 'horizontal' || $vertical_style == 1){?>  // RESPONSIVE CHO Vertical
+
+					{
+						breakpoint: 1199,
+						settings: {
+
+							slideMargin: 10,
+                            thumbMargin: 20,
+							slideMove: 1,
+							<?php if($detail_style == 2 || $detail_style == 3){?>
+								verticalHeight: 120,
+								item: 2,
+							<?php } else { ?>
+								verticalHeight: 242,
+								item: 4,
+							<?php } ?>
+						}
+					},
+
+					{
+						breakpoint: 992,
+						settings: {
+							verticalHeight: 255,
+							slideMargin: 10,
+                            thumbMargin: 15,
+							item: 3,
+							slideMove: 1
+						}
+					},
+
+					{
+						breakpoint: 768,
+						settings: {
+							verticalHeight: 255,
+							item: 4,
+							slideMargin: 10,
+                            thumbMargin: 20,
+							slideMove: 1
+						}
+					},
+
+					{
+						breakpoint: 480,
+						settings: {
+							verticalHeight: 140,
+							item: 2,
+                            thumbMargin: 20,
+							slideMargin: 10,
+							slideMove: 1
+						}
+					}
+				<?php } else {?> // RESPONSIVE CHO horizontal
+					{
+						breakpoint: 480,
+						settings: {
+							item: 4,
+                            thumbMargin: 20,
+							slideMargin: 10
+						}
+					}
+				<?php } ?>
+
+				]
+			});
+
+			$(".configurable-swatch-list .has-image").click(function () {
+				setTimeout(function () {
+					zoom();
+				}, 100);
+			});
+
+			$(window).resize(function () {
+				<?php if($config->getProductSetting('use_zoom_image') == 1){?>
+					zoom();
+					$('.zoomContainer').css({'left':'-9999px'});
+				<?php } ?>
+			});
+
+			$('.fancybox-buttons').fancybox({
+				title: null,
+				padding: 5,
+				nextEffect: 'none', // 'elastic', 'fade' or 'none'
+				prevEffect: 'none', // 'elastic', 'fade' or 'none'
+
+				helpers: {
+					title: {
+						type: 'inside'
+					},
+					buttons: {}
+				},
+				afterLoad: function () {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+			/*==FIX DUPLICATE IMAGE==*/
+			$(".more-views .thumb-link").click(function () {
+				//get current href #lightbox_btn
+				var bk_srcImage = $("#lightbox_btn").attr('href');
+				//get href .more-views .thumb-link after click event
+				var thumb_srcImage = $(this).attr('data-src-img');
+
+				//find and replace href duplicate
+				$(".btn-lightbox a").each(function () {
+					var href_this = $(this).attr('href');
+					if (href_this == thumb_srcImage) {
+						$(this).attr('href', bk_srcImage);
+					}
+				});
+
+				//set thumb_srcImage to #lightbox_btn
+				$("#lightbox_btn").attr('href', thumb_srcImage);
+			});
+
+			$(".col-main .more-views .thumb-link").click(function () {
+				//add active class
+				$(".col-main .more-views li").removeClass('active_thumbs');
+				$(this).parent().addClass('active_thumbs');
+			});
+
+			$(".quickview-main .more-views .thumb-link").click(function () {
+				//add active class
+				$(".quickview-main .more-views li").removeClass('active_thumbs');
+				$(this).parent().addClass('active_thumbs');
+			});
+
+
+            $('.more-views .lSAction').appendTo('.more-views');
+
+		});
+    </script>
+<?php echo $this->getChildHtml('after'); ?>
+<div class="like-social">
+	<div class="addthis_toolbox addthis_default_style ">
+		<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+		<iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/tweet_button.html" style="width:95px; height:20px;"></iframe>
+			<!--<a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>-->
+			<a style="display:inline-block;" class="addthis_button_compact">
+				 <img src="<?php echo $this->getSkinUrl('images/share-button.png') ?>"
+					  border="0" alt="Share"/></a>
+	</div>
+
+	<script type="text/javascript">var addthis_config = {"data_track_addressbar": false};</script>
+
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-529be2200cc72db5"></script>
+
+</div>

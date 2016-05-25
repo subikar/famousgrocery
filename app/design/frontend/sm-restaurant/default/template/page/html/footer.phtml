@@ -1,0 +1,12 @@
+<?php
+$config = Mage::helper('restaurant/config');
+$hdStyle = $config->getThemeLayout('footer_style');
+global $var_yttheme;
+?>
+
+<?php if($hdStyle == 'ft1'){
+    include (dirname(__FILE__).'/footer-1.phtml');
+} elseif($hdStyle == 'ft2') {
+    include (dirname(__FILE__).'/footer-2.phtml');
+}
+?>
